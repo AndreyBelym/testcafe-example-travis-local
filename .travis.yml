@@ -4,7 +4,7 @@ node_js: "stable"
 dist: trusty
 
 addons:
-  firefox: "53.0"
+  firefox: "latest"
   apt:
     sources:
      - google-chrome

@@ -4,7 +4,7 @@
   "description": "An example of how to run TestCafe tests in the cloud using Travis CI and Sauce Labs.",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js & sleep 10; testcafe remote --qr-code tests/index-test.js; EXIT_CODE=$?; kill $!; exit $EXIT_CODE"
+    "test": "testcafe remote --qr-code tests/index-test.js; EXIT_CODE=$?; kill $!; exit $EXIT_CODE"
   },
   "repository": {
     "type": "git",

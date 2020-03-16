@@ -4,7 +4,7 @@
   "description": "An example of how to run TestCafe tests in the cloud using Travis CI and Sauce Labs.",
   "main": "server.js",
   "scripts": {
-    "test": "testcafe chrome,firefox tests/index-test.js"
+    "test": "testcafe chrome,firefox tests/index-test.js --app \"node server.js\""
   },
   "repository": {
     "type": "git",

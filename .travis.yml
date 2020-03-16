@@ -1,7 +1,10 @@
 language: node_js
 node_js: "stable"
 
-dist: trusty
+dist: bionic
+
+services:
+ - xvfb
 
 addons:
   firefox: "latest"
@@ -9,9 +12,8 @@ addons:
     sources:
      - google-chrome
     packages:
-     - google-chrome-stable
+     - google-chrome-stable fluxbox
 
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
+  - fluxbox >/dev/null 2>&1 &
   - sleep 3
